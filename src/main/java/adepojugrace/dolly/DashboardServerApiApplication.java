@@ -25,12 +25,12 @@ public class DashboardServerApiApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Optional<WeatherApiResponse> reponse = weatherService.requestDataFromApi("39.7447", "-75.5484");
-		if(reponse.isEmpty()){
+		Optional<WeatherApiResponse> response = weatherService.requestDataFromApi("39.7447", "-75.5484");
+		if(response.isEmpty()){
 			log.info("No Beuno");
 			return;
 		}
-		WeatherApiResponse data = reponse.get();
+		WeatherApiResponse data = response.get();
 		log.info(data.toString());
 	}
 }

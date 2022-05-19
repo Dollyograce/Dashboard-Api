@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-@CrossOrigin("Http://localhost:3001")
+@CrossOrigin("Http://localhost:3000")
 @RestController
 @RequestMapping("/weatherapi")
 
